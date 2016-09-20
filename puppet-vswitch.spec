@@ -1,3 +1,11 @@
+%{!?upstream_version: %global upstream_version %{commit}}
+%define upstream_name puppet-vswitch
+%global commit e5684e5ac7f213b96d0fbc9e4efa6730730a5cbf
+%global shortcommit %(c=%{commit}; echo ${c:0:7})
+# DO NOT REMOVE ALPHATAG
+%global alphatag .%{shortcommit}git
+
+
 Name:           puppet-vswitch
 Version:        XXX
 Release:        XXX
@@ -6,7 +14,7 @@ License:        Apache-2.0
 
 URL:            https://launchpad.net/puppet-vswitch
 
-Source0:        https://tarballs.openstack.org/%{name}/%{name}-%{version}.tar.gz
+Source0:        https://tarballs.openstack.org/%{name}/%{name}-%{upstream_version}.tar.gz
 
 BuildArch:      noarch
 
@@ -16,7 +24,7 @@ Requires:       puppet >= 2.7.0
 A module for providing things (ports, bridges) to vSwitches (OVS)
 
 %prep
-%setup -q -n %{name}-%{version}
+%setup -q -n %{name}-%{upstream_version}
 
 find . -type f -name ".*" -exec rm {} +
 find . -size 0 -exec rm {} +
