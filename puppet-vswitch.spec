@@ -7,8 +7,8 @@
 
 
 Name:           puppet-vswitch
-Version:        XXX
-Release:        XXX
+Version:        5.3.0
+Release:        1%{?dist}
 Summary:        A module for providing things (ports, bridges) to vSwitches (OVS)
 License:        Apache-2.0
 
@@ -48,4 +48,7 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/vswitch/
 
 
 %changelog
+* Tue Sep 20 2016 Haikel Guemar <hguemar@fedoraproject.org> - 5.3.0-1
+- Newton update 5.3.0 (e5684e5ac7f213b96d0fbc9e4efa6730730a5cbf)
+
 
