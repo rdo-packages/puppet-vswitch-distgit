@@ -17,7 +17,7 @@ Requires:       puppet >= 2.7.0
 A module for providing things (ports, bridges) to vSwitches (OVS)
 
 %prep
-%setup -q -n %{name}-%{upstream_version}
+%setup -q -n openstack-vswitch-%{upstream_version}
 
 find . -type f -name ".*" -exec rm {} +
 find . -size 0 -exec rm {} +
