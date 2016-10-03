@@ -48,3 +48,4 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/vswitch/
 - Update to 5.3.0
 
 
+# REMOVEME: error caused by commit http://git.openstack.org/cgit/openstack/puppet-vswitch/commit/?id=7349ce7198c3d1a01e4b68a8ba7aed6b79ca3e2e
