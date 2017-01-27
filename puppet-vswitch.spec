@@ -3,7 +3,7 @@ Name:           puppet-vswitch
 Version:        XXX
 Release:        XXX
 Summary:        A module for providing things (ports, bridges) to vSwitches (OVS)
-License:        Apache-2.0
+License:        ASL 2.0
 
 URL:            https://launchpad.net/puppet-vswitch
 
