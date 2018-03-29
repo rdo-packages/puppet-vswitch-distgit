@@ -1,6 +1,6 @@
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 Name:           puppet-vswitch
-Version:        8.3.0
+Version:        8.4.0
 Release:        1%{?dist}
 Summary:        A module for providing things (ports, bridges) to vSwitches (OVS)
 License:        ASL 2.0
@@ -41,6 +41,9 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/vswitch/
 
 
 %changelog
+* Thu Mar 29 2018 RDO <dev@lists.rdoproject.org> 8.4.0-1
+- Update to 8.4.0
+
 * Wed Feb 21 2018 RDO <dev@lists.rdoproject.org> 8.3.0-1
 - Update to 8.3.0
 
