@@ -45,4 +45,3 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/vswitch/
 - Update to 11.4.0
 
 
-
