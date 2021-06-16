@@ -1,6 +1,6 @@
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 Name:           puppet-vswitch
-Version:        11.4.0
+Version:        11.5.0
 Release:        1%{?dist}
 Summary:        A module for providing things (ports, bridges) to vSwitches (OVS)
 License:        ASL 2.0
@@ -41,6 +41,9 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/vswitch/
 
 
 %changelog
+* Wed Jun 16 2021 RDO <dev@lists.rdoproject.org> 11.5.0-1
+- Update to 11.5.0
+
 * Fri Oct 04 2019 RDO <dev@lists.rdoproject.org> 11.4.0-1
 - Update to 11.4.0
 
