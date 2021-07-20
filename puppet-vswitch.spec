@@ -12,6 +12,9 @@ Source0:        https://tarballs.openstack.org/%{name}/%{name}-%{upstream_versio
 BuildArch:      noarch
 
 Requires:       puppet >= 2.7.0
+Requires:       puppet-openstacklib >= 15.5.0
+Requires:       puppet-stdlib       >= 5.0.0
+Requires:       puppet-kmod
 
 %description
 A module for providing things (ports, bridges) to vSwitches (OVS)
