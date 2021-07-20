@@ -25,6 +25,9 @@ BuildRequires:  openstack-macros
 %endif
 
 Requires:       puppet >= 2.7.0
+Requires:       puppet-kmod
+Requires:       puppet-openstacklib
+Requires:       puppet-stdlib
 
 %description
 A module for providing things (ports, bridges) to vSwitches (OVS)
