@@ -1,8 +1,8 @@
 %{!?sources_gpg: %{!?dlrn:%global sources_gpg 1} }
-%global sources_gpg_sign 0x01527a34f0d0080f8a5db8d6eb6c5df21b4b6363
+%global sources_gpg_sign 0x815AFEC729392386480E076DCC0DFE2D21C023C9
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 Name:           puppet-vswitch
-Version:        16.3.0
+Version:        16.3.1
 Release:        1%{?dist}
 Summary:        A module for providing things (ports, bridges) to vSwitches (OVS)
 License:        ASL 2.0
@@ -61,6 +61,9 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/vswitch/
 
 
 %changelog
+* Tue Aug 01 2023 RDO <dev@lists.rdoproject.org> 16.3.1-1
+- Update to 16.3.1
+
 * Tue Apr 05 2022 RDO <dev@lists.rdoproject.org> 16.3.0-1
 - Update to 16.3.0
 
